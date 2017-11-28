@@ -9,7 +9,7 @@ import br.edu.univas.si8.ta.shopping.interfaces.Order;
 @RequestScoped
 public class OrderServiceImpl implements OrderService{
 	
-	@EJB(mappedName = "java:app/hello-rest-ejb-0.1-SNAPSHOT/InventoryBean!br.edu.univas.si8.ta.hello.ejb.interfaces.InventoryRemote")
+	@EJB(mappedName = "java:app/shopping-ejb-0.1-SNAPSHOT/OrderBean!br.edu.univas.si8.ta.shopping.interfaces.OrderRemote")
 	private Order order;
 
 	@Override

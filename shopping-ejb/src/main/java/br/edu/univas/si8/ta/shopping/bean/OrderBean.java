@@ -8,6 +8,8 @@ import javax.ejb.Local;
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
+import br.edu.univas.si8.ta.shopping.dao.PedidoDAO;
+import br.edu.univas.si8.ta.shopping.entities.Pedido;
 import br.edu.univas.si8.ta.shopping.interfaces.OrderLocal;
 import br.edu.univas.si8.ta.shopping.interfaces.OrderRemote;
 
@@ -17,7 +19,7 @@ import br.edu.univas.si8.ta.shopping.interfaces.OrderRemote;
 public class OrderBean implements OrderLocal, OrderRemote{
 	
 	@EJB
-	private OrderDAO dao;
+	private PedidoDAO dao;
 
 	@Override
 	public void createNewPedido(String description) {
